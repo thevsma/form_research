@@ -17,16 +17,6 @@
     <main>
         <h1>Formulário de Pesquisa</h1>
 
-        <?php
-            if (isset($_GET['name']) && isset($_GET['age'])) {
-                $name = $_GET['name'];
-                $age = $_GET['age'];
-            }
-            else {
-                echo "<p>Dados incompletos, preencha novamente</p>";
-            }
-        ?>
-
         <form action="home.php" method="get">
             <fieldset>
                 <legend>Faixa Salarial</legend>
