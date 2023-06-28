@@ -27,6 +27,11 @@
                         if ($name == "") {
                             echo "<p>Nome não inserido, volte uma página e preencha!</p>";
                         }
+                        else {
+                            foreach ($_GET as $key => $value) {
+                                echo "<input type=\"hidden\" name=\"$key\" value=\"$value\">";
+                            }
+                        }
                     }
                 ?>
 
